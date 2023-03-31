@@ -142,7 +142,7 @@ To continue, you must log in. Would you like to log in (Y/n)? Y
 
 IAM 관리자 → 서비스 계정 → 서비스 계정 만들기 를 클릭 합니다.
 
-<img src="./img/image-20230330192239007.png" align="left" alt="image-20230330192239007" style="zoom:100%;" />
+<img src="./img/image-20230330192239007.png"  alt="image-20230330192239007" style="zoom:100%;" />
 
 
 
