@@ -172,9 +172,29 @@ IAM 관리자 → 서비스 계정 → 서비스 계정 만들기 를 클릭 합
 
 
 
-## 5. Terraform Workspace 만들기
+## 5. Terraform 
+
+### 5.1 Git Clone
+
+```zsh
+git clone https://github.com/dangtong76/gke-clusters.git
+```
 
 
+
+### 5.2 tfvars 수정
+
+dev-gke.tfvars 를 자신의 환경에 맞게 내용을 바꿔 줍니다.
+
+```tex
+project_id = "<your project id>"
+region = "<your region>"
+ip_cidr_range = "<CIDR Range>" #10.111.0.0/16
+```
+
+
+
+### 5.1 Workspace 생성
 
 ```
 # Workspace 생성
@@ -183,5 +203,15 @@ terraform workspace new dev-gke
 # Workspace 조회
 terraform workspace list
 
+```
+
+#### 5.4 클러스터 생성
+
+```
+terraform workspace select dev-gke
+
+terraform plan -var-file=dev-gke.tfvars 
+
+terraform apply -var-file=dev-gke.tfvars
 ```
 
