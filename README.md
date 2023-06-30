@@ -174,7 +174,7 @@ IAM 관리자 → 서비스 계정 → 서비스 계정 만들기 를 클릭 합
 
 ## 5. Terraform 
 
-### 5.1 Git Clone
+### 5.1 Git Clone 하기
 
 ```zsh
 git clone https://github.com/dangtong76/gke-clusters.git
